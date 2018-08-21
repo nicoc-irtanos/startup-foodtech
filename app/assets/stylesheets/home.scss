@@ -1,3 +1,25 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+  text-align: center;
+}
+.slide{
+  border: solid 1px;
+}
+
+.current{
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 400px;
+}
+
+
+ul{
+  display: flex;
+  list-style-type: none;
+}
