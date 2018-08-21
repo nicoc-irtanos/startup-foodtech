@@ -2,13 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: rgb(179, 55, 39)
+  background-color: rgb(179, 55, 39);
+  font-size: 18px;
 }
 .supercontrol {
   display: flex;
   justify-content: space-between;
   margin: auto;
   width: 800px;
+  padding: 16px;
 }
 
 #container2 h1{
@@ -36,7 +38,6 @@ body {
   top: 0;
   left: 0;
 }
-
 
 ul {
   display: flex;

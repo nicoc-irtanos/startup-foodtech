@@ -24,3 +24,6 @@
 .tablinks.inactive {
   background-color: rgb(180, 180, 180)
 }
+.tabcontent {
+  padding: 0.7em;
+}
