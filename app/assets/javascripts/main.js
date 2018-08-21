@@ -33,15 +33,39 @@ $(document).ready(function() {
   // partie controle du slide 
   $('.next').click(function(){ // image suivante
     i++; // on incrémente le compteur
+    if (i > 2) {
+      i = 0
+    }
     $img.css('display', 'none'); // on cache les images
     $currentImg = $img.eq(i); // on définit la nouvelle image
     $currentImg.css('display', 'block'); // puis on l'affiche
-});
+  });
 
   $('.prev').click(function(){ // image précédente
       i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
+      if (i < 0) {
+        i = 2
+      }
       $img.css('display', 'none');
       $currentImg = $img.eq(i);
       $currentImg.css('display', 'block');
   });
+
+  // pour les fucking rond
+  $('.inner_rond').click(function(){
+    $img.css('display', 'none'); // on cache les images
+    $currentImg = $img.eq($(this).attr('id') - 1)
+    $currentImg.css('display', 'block');
+  });
+
+  // fucking mother timeout
+  setInterval(function(){ // image précédente
+    i++; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
+    if (i > 2) {
+      i = 0
+    }
+    $img.css('display', 'none');
+    $currentImg = $img.eq(i);
+    $currentImg.css('display', 'block');
+  },5000)
 });
