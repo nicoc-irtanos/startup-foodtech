@@ -59,8 +59,8 @@ $(document).ready(function() {
   });
 
   // fucking mother timeout
-  setInterval(function(){ // image précédente
-    i++; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
+  setInterval(function(){ // fucking rien à battre, je recopie le même fucking code
+    i++; 
     if (i > 2) {
       i = 0
     }
