@@ -5,13 +5,21 @@
 h1{
   text-align: center;
 }
+.container{
+  position: relative;
+  margin: auto;
+}
+
 .slide{
   border: solid 1px;
+  overflow: hidden;
+}
+
+.rest{
 }
 
 .current{
   display: block;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
