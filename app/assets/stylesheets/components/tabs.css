@@ -1,21 +1,25 @@
-.tab {
+.tabconteneur {
+  margin: auto;
+  width: 60%;
+}
+#tabs {
+  width: 50%;
+  margin: auto;
   overflow: hidden;
-  border: 1px;
+}
+.tabul {
+  padding-left: 0px;
 }
 .tablinks {
-  display: inline;
-  border: 1px;
+  text-decoration: none;
+  color: black;
   padding: 14px;
   margin: 0px;
-  background-color: rgb(150, 150, 150)
-}
-.tablinks:hover {
   background-color: rgb(120, 120, 120)
+}
+.tablinks.inactive:hover {
+  background-color: rgb(140, 140, 140)
 }
 .tablinks.inactive {
   background-color: rgba(180, 180, 180)
-}
-.tabcontent {
-  margin: auto;
-  border: 1px;
 }
