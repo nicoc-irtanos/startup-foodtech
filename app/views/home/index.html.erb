@@ -1,4 +1,4 @@
-<div id="container">
+<div id="container1">
   <div class="slide">
     <ul>
       <li><%= image_tag  "kebab1.jpg" %></li>
@@ -6,17 +6,22 @@
       <li><%= image_tag  "kebab3.jpg" %></li>
     </ul>
   </div>
-  <div class="controls">
-    <span class="prev">Precedent</span>
-    <span class="next">Suivant</span>
+  <div class="supercontrol">
+    <div class="controls">
+      <span class="prev">Precedent</span>
+      <span class="next">Suivant</span>
+    </div>
+    <div class="rond">
+      <span class="inner_rond" id="1">1</span>
+      <span class="inner_rond" id="2">2</span>
+      <span class="inner_rond" id="3">3</span>
+    </div>
   </div>
-  <div class="rond">
-    <span class="inner_rond" id="1">1</span>
-    <span class="inner_rond" id="2">2</span>
-    <span class="inner_rond" id="3">3</span>
-  </div>
+</div>
 
+<div id="container2">
   <h1>Bienvenue sur le site du meilleur kebab de France !</h1>
   <p>Salade, tomate, oignon chef !</p>
 </div>
+
 <%= render  "/layouts/tabs" %>
